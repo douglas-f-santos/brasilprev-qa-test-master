@@ -12,6 +12,7 @@ Execução da Automação:
 2. Baixe o projeto nessa url: https://github.com/douglas-f-santos/brasilprev-qa-test-master.git
 
 3. Executar o projeto de automação, abra o mesmo via cmd e execute as seguintes instruções:
+
    a) bundle install (instalar as dependências) 
    b) cucumber --t  @CRpessoa --format json --out cucumber.json (executa todos seus cenários da funcionalidade)
 
