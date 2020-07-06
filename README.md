@@ -23,4 +23,4 @@ Execução da Automação:
    
    b) Abrir o arquivo <reports.html>
 
-## Arquivo de bugs encontrados: Documentação de bugs.pdf
+#### Arquivo de bugs encontrados: Documentação de bugs.pdf
