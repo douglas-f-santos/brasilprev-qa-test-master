@@ -18,7 +18,9 @@ Execução da Automação:
    b) cucumber --t  @CRpessoa --format json --out cucumber.json (executa todos seus cenários da funcionalidade)
 
 4. Resultados (Reports):
+
    a) Acessar a pasta do projeto <\Automacao - API - Brasil Prev\results>
+   
    b) Abrir o arquivo <reports.html>
 
-Arquivo de bugs encontrados: Documentação de bugs.pdf
+##Arquivo de bugs encontrados: Documentação de bugs.pdf
