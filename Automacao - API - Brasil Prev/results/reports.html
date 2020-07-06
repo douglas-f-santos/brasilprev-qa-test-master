@@ -1,0 +1,3845 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>Automacao de API - Brasil Prev</title>
+
+  <link rel="icon" href="https://reportbuilder.rajatthareja.com/rb.ico">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="https://cdn.datatables.net/1.10.16/css/jquery.dataTables.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" media="screen,projection"/>
+  <link href="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/css/report.builder.min.css" rel="stylesheet">
+
+  
+</head>
+
+  <body>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.0/Chart.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js"></script>
+
+<header class="brown lighten-5">
+  <div class="row brown lighten-1">
+    <div class="col m6 hide-on-small-only">
+      <h5 class="truncate white-text tooltipped" data-tooltip="Automacao de API - Brasil Prev">Automacao de API - Brasil Prev</h5>
+    </div>
+
+    <div class="col m6 s12 brown lighten-1">
+      <ul class="tabs brown lighten-1 row" style="overflow-x: hidden">
+        <li class="tab col s3">
+          <a class="brown lighten-3 active blue-text waves-effect waves-light tooltipped" data-tooltip="Results Overview" href="#overview"><i class="material-icons">assessment</i> Overview</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios by Features" href="#features"><i class="material-icons">view_headline</i> Features</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Scenarios Summary Table" href="#summary"><i class="material-icons">view_comfy</i> Summary</a>
+        </li>
+        <li class="tab col s3">
+          <a class="brown lighten-3 white-text waves-effect waves-light tooltipped" data-tooltip="Failed Scenarios" href="#errors"><i class="material-icons">bug_report</i> Errors</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+
+    
+
+    
+    
+
+    
+    
+        
+        <div id="g0f0s0" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+Dados+Validos</div>
+        
+    
+
+    <h5>Efetuar cadastro de pessoa (3.717s)</h5>
+    features/API/BDD_API/api.feature:7
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (3.654s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema (0.061s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema cadastra a pessoa com sucesso (0.002s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s1" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+CPF+Cadastrado</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com cpf já cadastrado (0.068s)</h5>
+    features/API/BDD_API/api.feature:13
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados ja cadastrados da pessoa (0.046s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario tentar cadastrar os dados com cpf ja cadastrado (0.022s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>E </b> exibe uma mensagem informando que o CPF já está cadastrado (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s2" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+CPF+Invalido</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com cpf inválido (0.076s)</h5>
+    features/API/BDD_API/api.feature:20
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com cpf invalido (0.055s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.021s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:23:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":138,"nome":"Olívia dos Reis Filho","cpf":"99053031959","enderecos":[{"codigo":138,"logradouro":"Ponte Bárbara Meira","numero":100,"complemento":"Apto. 474","bairro":"Lagoa","cidade":"Salvaterra","estado":"BA"}],"telefones":[{"codigo":138,"ddd":"11","numero":"990866911"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s3" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+Sem+DDD</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem o ddd (0.055s)</h5>
+    features/API/BDD_API/api.feature:26
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem ddd (0.054s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:29:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":139,"nome":"Sr. Lara Rêgo","cpf":"42525370880","enderecos":[{"codigo":139,"logradouro":"Viela Alice de Lins","numero":100,"complemento":"Sobrado 74","bairro":"Lagoa","cidade":"Maragogipe","estado":"PR"}],"telefones":[{"codigo":139,"ddd":"","numero":"990941222"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s4" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+Sem+num+telefone</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem número do telefone (0.034s)</h5>
+    features/API/BDD_API/api.feature:32
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem numero de telefone (0.034s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s5" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+DDD+Zerado</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com ddd zerado (0.055s)</h5>
+    features/API/BDD_API/api.feature:38
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com ddd zerado (0.055s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:41:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":140,"nome":"João Samuel Passarinho","cpf":"85704703984","enderecos":[{"codigo":140,"logradouro":"Rodovia Letícia Sanches","numero":100,"complemento":"Lote 91","bairro":"Lagoa","cidade":"Jupi","estado":"PI"}],"telefones":[{"codigo":140,"ddd":"0","numero":"990737059"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s6" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+num+telefone+Zerado</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com numero de telefone zerado (0.034s)</h5>
+    features/API/BDD_API/api.feature:44
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com telefone zerado (0.034s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s7" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+DDD+incompleto</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com ddd incompleto (0.046s)</h5>
+    features/API/BDD_API/api.feature:50
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com ddd incompleto (0.045s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:53:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":141,"nome":"Nataniel Diegues","cpf":"34403631711","enderecos":[{"codigo":141,"logradouro":"Alameda Calebe","numero":100,"complemento":"Apto. 867","bairro":"Lagoa","cidade":"Sousa","estado":"RO"}],"telefones":[{"codigo":141,"ddd":"2","numero":"990364657"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s8" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+num+telefone+incompleto</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com telefone incompleto (0.046s)</h5>
+    features/API/BDD_API/api.feature:56
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com numero de telefone incompleto (0.045s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:59:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":142,"nome":"Yuri Regueira","cpf":"91055376062","enderecos":[{"codigo":142,"logradouro":"Avenida Carolina Mendes","numero":100,"complemento":"Apto. 860","bairro":"Lagoa","cidade":"Uniflor","estado":"PA"}],"telefones":[{"codigo":142,"ddd":"11","numero":"038125"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s9" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+DDD+mais+2digitos</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com ddd com mais de 2 digitos (0.069s)</h5>
+    features/API/BDD_API/api.feature:62
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com ddd com mais de 2 digitos (0.068s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s10" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+num+telefone+mais+9digitos</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com numero de telefone com mais de 9 digitos (0.066s)</h5>
+    features/API/BDD_API/api.feature:68
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com numero de telefone com mais de 9 digitos (0.066s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s11" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+DDD+Alfanumerico</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com ddd alfanumerico (0.056s)</h5>
+    features/API/BDD_API/api.feature:74
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema com ddd com alfanumerico (0.055s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:77:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":145,"nome":"Theo Bittencourt","cpf":"36083534615","enderecos":[{"codigo":145,"logradouro":"Viela Lívia Peres","numero":100,"complemento":"Casa 7","bairro":"Lagoa","cidade":"Cristais Paulista","estado":"AM"}],"telefones":[{"codigo":145,"ddd":"ab","numero":"990217151"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s12" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+num+telefone+Alfanumerico</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com numero de telefone alfanumerico (0.056s)</h5>
+    features/API/BDD_API/api.feature:80
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema o numero de telefone com alfanumerico (0.056s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:83:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":146,"nome":"Sra. Marcela Carreira","cpf":"34609478021","enderecos":[{"codigo":146,"logradouro":"Alameda Maria Sophia","numero":100,"complemento":"Casa 6","bairro":"Lagoa","cidade":"Remígio","estado":"RJ"}],"telefones":[{"codigo":146,"ddd":"11","numero":"ITN"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s13" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+nome</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem nome (0.055s)</h5>
+    features/API/BDD_API/api.feature:86
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem o nome (0.054s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:89:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":147,"nome":"","cpf":"00325086206","enderecos":[{"codigo":147,"logradouro":"Alameda Henrique da Penha","numero":100,"complemento":"Quadra 50","bairro":"Lagoa","cidade":"Deputado Irapuan Pinheiro","estado":"RS"}],"telefones":[{"codigo":147,"ddd":"11","numero":"990826154"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s14" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+logradouro</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem o logradouro do endereço (0.046s)</h5>
+    features/API/BDD_API/api.feature:92
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem logradouro (0.045s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:95:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":148,"nome":"Ana Lívia Cardoso","cpf":"67438771903","enderecos":[{"codigo":148,"logradouro":"","numero":100,"complemento":"Apto. 980","bairro":"Lagoa","cidade":"Santa Teresinha","estado":"MS"}],"telefones":[{"codigo":148,"ddd":"11","numero":"990054547"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s15" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+bairro</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem o bairro do endereço (0.057s)</h5>
+    features/API/BDD_API/api.feature:98
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem bairro (0.056s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:101:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":149,"nome":"Fernando Xavier","cpf":"95132645135","enderecos":[{"codigo":149,"logradouro":"Alameda Ladislau Casqueira","numero":100,"complemento":"Apto. 464","bairro":"","cidade":"Marmelópolis","estado":"RN"}],"telefones":[{"codigo":149,"ddd":"11","numero":"990782308"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s16" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+numero</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem o numero do endereço (0.046s)</h5>
+    features/API/BDD_API/api.feature:104
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem numero (0.045s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:107:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":150,"nome":"Isadora Silveira Jr.","cpf":"44350419799","enderecos":[{"codigo":150,"logradouro":"Marginal Gúbio Antena","numero":null,"complemento":"Lote 17","bairro":"Lagoa","cidade":"Setubinha","estado":"PI"}],"telefones":[{"codigo":150,"ddd":"11","numero":"990362415"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s17" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+cidade</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem a cidade do endereço (0.056s)</h5>
+    features/API/BDD_API/api.feature:110
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem cidade (0.055s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:113:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":151,"nome":"Bryan Pinheira","cpf":"63351663641","enderecos":[{"codigo":151,"logradouro":"Alameda Anthony Silveira","numero":100,"complemento":"Quadra 81","bairro":"Lagoa","cidade":"","estado":"SP"}],"telefones":[{"codigo":151,"ddd":"11","numero":"990669714"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s18" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+sem+estado</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa sem o estado do endereço (0.054s)</h5>
+    features/API/BDD_API/api.feature:116
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario cadastrar os dados no sistema sem estado (0.054s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step failed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+    
+    
+    
+    <pre>
+expected: value != 201
+     got: 201
+
+(compared using ==)
+ (RSpec::Expectations::ExpectationNotMetError)
+./features/API/Step_definitions_api/steps_api.rb:154:in `&quot;o sistema não deve permitir o cadastro&quot;&#39;
+features/API/BDD_API/api.feature:119:in `o sistema não deve permitir o cadastro&#39;</pre>
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+    
+        <pre>Status Code: 201</pre>
+    
+        <pre>Body: {"codigo":152,"nome":"Vicente Quaresma Filho","cpf":"07068754511","enderecos":[{"codigo":152,"logradouro":"Rodovia Núbia Carneiro","numero":100,"complemento":"Apto. 635","bairro":"Lagoa","cidade":"Caiabu","estado":""}],"telefones":[{"codigo":152,"ddd":"11","numero":"990087397"}]}</pre>
+    
+
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s19" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Cadastrar+Pessoa+Telefone+Cadastrado</div>
+        
+    
+
+    <h5>Não efetuar cadastro de pessoa com telefone já cadastrado (0.090s)</h5>
+    features/API/BDD_API/api.feature:122
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados ja cadastrados da pessoa (0.056s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario tentar cadastrar os dados com telefone ja cadastrado (0.034s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não deve permitir o cadastro (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>E </b> exibe uma mensagem informando que o telefone já está cadastrado (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s20" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Consultar+Pessoa+Telefone+Cadastrado</div>
+        
+    
+
+    <h5>Efetuar consulta de pessoa através do telefone (0.100s)</h5>
+    features/API/BDD_API/api.feature:129
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados ja cadastrados da pessoa (0.055s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario consulta o DDD e o Telefone (0.045s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema exibe os dados da pessoa com sucesso (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>E </b> todos os dados estão iguais aos cadastrados (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+        
+        <div id="g0f0s21" class="modal modal-fixed-footer">
+  <div class="modal-content">
+
+    
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@CRpessoa</div>
+        
+            <div class="chip"><i class="material-icons rotate-45">label</i>@Consultar+Pessoa+Telefone+Naocadastrado</div>
+        
+    
+
+    <h5>Não efetuar consulta de pessoa com telefone não cadastrado (0.023s)</h5>
+    features/API/BDD_API/api.feature:136
+
+    
+        
+    
+
+    <ul class="collection stepList">
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Dado </b> que o usuario possua os dados da pessoa (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Quando </b> o usuario consulta o DDD e o Telefone (0.022s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>Entao </b> o sistema não permite a consulta (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+          <li class="collection-item step passed">
+  
+
+  <b>E </b> exibe uma mensagem informando que o telefone não está cadastrado (0.000s)
+
+  
+
+  
+
+  
+  
+  
+
+
+
+
+
+
+  
+</li>
+
+      
+    </ul>
+
+    
+        
+            
+
+
+
+
+
+        
+    
+  </div>
+
+  <div class="modal-footer">
+    <span class="modal-action modal-close waves-effect waves-green btn-flat"><i class="material-icons">close</i></span>
+  </div>
+</div>
+
+    
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        
+        $('#g0f0s0').modal();
+        
+        $('#g0f0s1').modal();
+        
+        $('#g0f0s2').modal();
+        
+        $('#g0f0s3').modal();
+        
+        $('#g0f0s4').modal();
+        
+        $('#g0f0s5').modal();
+        
+        $('#g0f0s6').modal();
+        
+        $('#g0f0s7').modal();
+        
+        $('#g0f0s8').modal();
+        
+        $('#g0f0s9').modal();
+        
+        $('#g0f0s10').modal();
+        
+        $('#g0f0s11').modal();
+        
+        $('#g0f0s12').modal();
+        
+        $('#g0f0s13').modal();
+        
+        $('#g0f0s14').modal();
+        
+        $('#g0f0s15').modal();
+        
+        $('#g0f0s16').modal();
+        
+        $('#g0f0s17').modal();
+        
+        $('#g0f0s18').modal();
+        
+        $('#g0f0s19').modal();
+        
+        $('#g0f0s20').modal();
+        
+        $('#g0f0s21').modal();
+        
+        $('#g0f0s22').modal();
+        
+    });
+</script>
+
+
+    <main class="brown lighten-5">
+      <div class="row">
+
+        <div id="overview" class="col s12 brown lighten-5">
+          <div class="row">
+  <div class="col m4 s12">
+    <canvas id="featuresDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataFeatures" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <canvas id="scenariosDoughnut" width="400" height="400"></canvas>
+    <table id="metaDataScenarios" class="bordered">
+      <tbody></tbody>
+    </table>
+  </div>
+
+  <div class="col m4 s12">
+    <table id="metaData" class="bordered">
+      <tbody>
+      <tr><th>Total Time</th><td>4.905s</td></tr>
+      
+      </tbody>
+    </table>
+  </div>
+</div>
+
+        </div>
+
+        <div id="features" class="col s12 brown lighten-5 white-text">
+          <ul class="featureList collapsible popout" data-collapsible="expandable">
+  
+      
+      <li class="feature broken">
+  <div class="collapsible-header brown lighten-1 waves-effect waves-light">
+    <i class="material-icons">featured_play_list</i>
+    <b>Funcionalidade</b>&nbsp;Cadastrar e consultar pessoa&nbsp;(4.905s)
+  </div>
+
+  <div class="collapsible-body brown lighten-4">
+    <div class="collection scenarioList brown">
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s0">
+          <b>Cenario</b> Efetuar cadastro de pessoa&nbsp;(3.717s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s1">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com cpf já cadastrado&nbsp;(0.068s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s2">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com cpf inválido&nbsp;(0.076s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s3">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem o ddd&nbsp;(0.055s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s4">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem número do telefone&nbsp;(0.034s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s5">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com ddd zerado&nbsp;(0.055s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s6">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com numero de telefone zerado&nbsp;(0.034s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s7">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com ddd incompleto&nbsp;(0.046s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s8">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com telefone incompleto&nbsp;(0.046s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s9">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com ddd com mais de 2 digitos&nbsp;(0.069s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s10">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com numero de telefone com mais de 9 digitos&nbsp;(0.066s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s11">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com ddd alfanumerico&nbsp;(0.056s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s12">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com numero de telefone alfanumerico&nbsp;(0.056s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s13">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem nome&nbsp;(0.055s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s14">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem o logradouro do endereço&nbsp;(0.046s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s15">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem o bairro do endereço&nbsp;(0.057s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s16">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem o numero do endereço&nbsp;(0.046s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s17">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem a cidade do endereço&nbsp;(0.056s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text failed" href="#g0f0s18">
+          <b>Cenario</b> Não efetuar cadastro de pessoa sem o estado do endereço&nbsp;(0.054s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s19">
+          <b>Cenario</b> Não efetuar cadastro de pessoa com telefone já cadastrado&nbsp;(0.090s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s20">
+          <b>Cenario</b> Efetuar consulta de pessoa através do telefone&nbsp;(0.100s)
+        </a>
+      
+        <a class="collection-item scenario modal-trigger waves-effect waves-light white-text passed" href="#g0f0s21">
+          <b>Cenario</b> Não efetuar consulta de pessoa com telefone não cadastrado&nbsp;(0.023s)
+        </a>
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+
+        <div id="summary" class="col s12 brown lighten-5">
+          <table id="summaryTable" class="bordered brown lighten-1 white-text" width="100%">
+  <thead>
+  <tr>
+    <th class="hide-on-small-only">Feature</th>
+    <th>Scenario</th>
+    <th class="hide">Tags</th>
+    <th>Status</th>
+
+
+    
+
+    <th class="hide-on-small-only">Error</th>
+  </tr>
+  </thead>
+  <tbody>
+  
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s0">
+  Efetuar cadastro de pessoa
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+Dados+Validos. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s1">
+  Não efetuar cadastro de pessoa com cpf já cadastrado
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+CPF+Cadastrado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s2">
+  Não efetuar cadastro de pessoa com cpf inválido
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+CPF+Invalido. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s3">
+  Não efetuar cadastro de pessoa sem o ddd
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+Sem+DDD. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s4">
+  Não efetuar cadastro de pessoa sem número do telefone
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+Sem+num+telefone. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s5">
+  Não efetuar cadastro de pessoa com ddd zerado
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+DDD+Zerado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s6">
+  Não efetuar cadastro de pessoa com numero de telefone zerado
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+num+telefone+Zerado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s7">
+  Não efetuar cadastro de pessoa com ddd incompleto
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+DDD+incompleto. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s8">
+  Não efetuar cadastro de pessoa com telefone incompleto
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+num+telefone+incompleto. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s9">
+  Não efetuar cadastro de pessoa com ddd com mais de 2 digitos
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+DDD+mais+2digitos. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s10">
+  Não efetuar cadastro de pessoa com numero de telefone com mais de 9 digitos
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+num+telefone+mais+9digitos. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s11">
+  Não efetuar cadastro de pessoa com ddd alfanumerico
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+DDD+Alfanumerico. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s12">
+  Não efetuar cadastro de pessoa com numero de telefone alfanumerico
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+num+telefone+Alfanumerico. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s13">
+  Não efetuar cadastro de pessoa sem nome
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+nome. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s14">
+  Não efetuar cadastro de pessoa sem o logradouro do endereço
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+logradouro. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s15">
+  Não efetuar cadastro de pessoa sem o bairro do endereço
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+bairro. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s16">
+  Não efetuar cadastro de pessoa sem o numero do endereço
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+numero. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s17">
+  Não efetuar cadastro de pessoa sem a cidade do endereço
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+cidade. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="failed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s18">
+  Não efetuar cadastro de pessoa sem o estado do endereço
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+sem+estado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  failed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+      
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s19">
+  Não efetuar cadastro de pessoa com telefone já cadastrado
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Cadastrar+Pessoa+Telefone+Cadastrado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s20">
+  Efetuar consulta de pessoa através do telefone
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Consultar+Pessoa+Telefone+Cadastrado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+          
+          <tr class="passed">
+            <td class="hide-on-small-only">
+  Cadastrar e consultar pessoa
+</td>
+
+<td class="hoverable modal-trigger white-text" data-target="g0f0s21">
+  Não efetuar consulta de pessoa com telefone não cadastrado
+</td>
+
+<td class="hide">
+  
+      
+          @CRpessoa. 
+      
+          @Consultar+Pessoa+Telefone+Naocadastrado. 
+      
+  
+</td>
+
+<td class="uppercase">
+  passed
+</td>
+
+
+
+<td class="hide-on-small-only">
+  
+</td>
+
+          </tr>
+      
+  
+  </tbody>
+</table>
+
+        </div>
+
+        <div id="errors" class="col s12 brown lighten-5">
+          <ul class="errorList collapsible popout" data-collapsible="expandable">
+  
+      <li class="error">
+  <div class="collapsible-header red lighten-2 white-text waves-effect waves-light">
+    <i class="material-icons">bug_report</i>
+  </div>
+
+  <div class="collapsible-body brown lighten-4">
+    <div class="collection failedScenarioList">
+      
+          
+              
+          
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s2">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com cpf inválido
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s3">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem o ddd
+                      </a>
+                  
+              
+          
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s5">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com ddd zerado
+                      </a>
+                  
+              
+          
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s7">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com ddd incompleto
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s8">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com telefone incompleto
+                      </a>
+                  
+              
+          
+              
+          
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s11">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com ddd alfanumerico
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s12">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa com numero de telefone alfanumerico
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s13">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem nome
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s14">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem o logradouro do endereço
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s15">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem o bairro do endereço
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s16">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem o numero do endereço
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s17">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem a cidade do endereço
+                      </a>
+                  
+              
+          
+              
+                  
+                      <a class="collection-item failedScenario brown lighten-5 red-text modal-trigger waves-effect waves-light" href="#g0f0s18">
+                        <i class="material-icons">highlight_off</i>&nbsp;Não efetuar cadastro de pessoa sem o estado do endereço
+                      </a>
+                  
+              
+          
+              
+          
+              
+          
+              
+          
+      
+    </div>
+  </div>
+</li>
+
+  
+</ul>
+
+        </div>
+      </div>
+    </main>
+
+    <footer class="page-footer brown lighten-4">
+  <div class="footer-copyright brown lighten-1">
+    <div class="container">
+      Happy Reporting!
+      <a class="white-text text-lighten-4 right" href="https://reportbuilder.rajatthareja.com">Generated by Report Builder</a>
+    </div>
+  </div>
+</footer>
+
+<script type="text/javascript" src="https://cdn.rawgit.com/rajatthareja/ReportBuilder/v1.9/js/report.builder.min.js"></script>
+
+
+
+
+
+  </body>
+</html>
